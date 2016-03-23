@@ -27,3 +27,12 @@ function ShowDiv() {
     }
 
 }
+
+//ATR: Permite mostrar el modal oculto, que desplegará el inicio de sesió.
+function ShowModalLogin()
+{
+    $('#modalLogin').modal({
+        show: 'show'
+    });
+
+}

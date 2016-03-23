@@ -26,14 +26,14 @@
                     <li role="presentation"><a href="#">Menu2 </a></li>
                     <li role="presentation"><a href="#">Menu3 </a></li>
                 </ul>
-                <button class="btn btn-primary navbar-btn navbar-right" type="button">Iniciar Sesion</button>
+                <button class="btn btn-primary navbar-btn navbar-right" type="button" onclick="ShowModalLogin();">Iniciar Sesion</button>
             </div>
         </div>
     </nav>
     <ol class="breadcrumb">
-        <li><a href="#"><span>Store </span></a></li>
-        <li><a href="#"><span>Men</span></a></li>
-        <li class="active"><span>Suits </span></li>
+        <li><a href="#"><span>SubMenu </span></a></li>
+        <li><a href="#"><span>SubMenu2</span></a></li>
+        <li class="active"><span>SubMenu3 </span></li>
     </ol>
     <div class="container">
         <div class="row product">
@@ -102,6 +102,41 @@
                 <div class="col-sm-6"></div>
             </div>
         </div>
+
+        <!--ATR: Acá tengo el HTML del moda, que se desplegará con el Inicio de Sesio. -->
+        <!-- Modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalLogin" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Gatillando Modal con Bootstrap</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="email-input" class="control-label sr-only">Usuario </label><br>
+                            <input type="email" placeholder="Email" class="form-control" id="email-input" />
+
+                            <label for="password-input" class="control-label sr-only">Password </label>
+                            <input type="password" placeholder="Password" class="form-control" id="password-input" /><br>
+
+                            <button class="btn btn-default" type="submit">Login</button>
+
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </footer>
 
     <!--ATR: En el footer, referenciamos a ls librerias JS que se requieren-->
