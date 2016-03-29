@@ -20,44 +20,24 @@
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav">
-                    <!--ATR: La propiedad href permite redireccionar via hTTP a la vista que correspoda, dandole el path -->
-                    <li role="presentation"><a href="#">Menu1 </a></li>
-                    <li role="presentation"><a href="#">Menu2 </a></li>
-                    <li role="presentation"><a href="#">Menu3 </a></li>
-                </ul>
-                <button class="btn btn-primary navbar-btn navbar-right" type="button" onclick="ShowModalLogin();">Iniciar Sesion</button>
+
+
             </div>
         </div>
     </nav>
-    <ol class="breadcrumb">
-        <li><a href="#"><span>SubMenu </span></a></li>
-        <li><a href="#"><span>SubMenu2</span></a></li>
-        <li class="active"><span>SubMenu3 </span></li>
-    </ol>
     <div class="container">
         <div class="row product">
             <div class="col-md-5 col-md-offset-0"></div>
             <div class="col-md-7">
-                <h2>Mostrar Div Oculto</h2>
-                <div id="divOculto">
-                <p>Este HTML se mostrara, solo si el div que lo contiene (container) esta visible (Propiedad DISPLAY != NONE).. </p>
-                </div>
-                <select>
-                    <option value="" selected="">Lista (DropDownList)</option>
-                    <option value="Dato 1">XXL</option>
-                    <option value="Dato 2">XL</option>
-                    <option value="Dato 3">M</option>
-                    <option value="Dato 4">S</option>
-                </select>
-                <button class="btn btn-primary" type="button" onclick="HideDivHide();">Ocultar </button>
-                <button class="btn btn-primary" type="button" onclick="ShowDiv();">Mostrar </button>
+                <h2>Consumir API Amazon WS.</h2>
+                <button class="btn btn-primary" type="button" onclick="HideGrid();">Ocultar </button>
+                <button class="btn btn-primary" type="button" onclick="ShowGrid();">Mostrar </button>
             </div>
         </div>
         <div class="page-header">
             <h3>Grid (Tabla para Binding de Datos)</h3></div>
-        <p>Aca se mostrarán datos desde distintos Backend, una vez se seleccione la tecnología para realizar el databinding. Por mientras, se colocarán datos en duro. </p>
-        <div class="table-responsive">
+        <p>Esta grilla se 'bindeará' a partir del consumo de un API Rest dispuesto en otra locación (Backend). </p>
+        <div class="table-responsive" style="display: none" id="gridApiRest">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -145,6 +125,7 @@
 
 <!--ATR: Referenciamos ademas, a la libreria que corresponde para nuestro JS que encapsulara funciones. -->
         <script src="../controller/Funciones.js" type="text/javascript"></script>
+    <script src="../controller/gridManager.js" type="text/javascript"></script>
 </body>
 
 </html>

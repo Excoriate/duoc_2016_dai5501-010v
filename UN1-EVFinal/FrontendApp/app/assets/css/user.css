@@ -72,3 +72,5 @@ nav.navbar.navbar-default{
   margin-top:-6px;
 }
 
+#success_message{ display: none;}
+#error_message{ display: none;}

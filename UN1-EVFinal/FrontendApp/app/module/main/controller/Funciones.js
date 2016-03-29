@@ -3,36 +3,37 @@
  */
 
 //ATR: Permite ocultar el Div.
-function HideDivHide() {
-    var div = document.getElementById("divOculto");
+function HideGrid() {
+    var div = document.getElementById("gridApiRest");
 
     if(div !== undefined)
     {
         //$("#divOculto").show();
-        $("#divOculto").css("display","none");
+        $("#gridApiRest").css("display","none");
 
     }
 
 }
 
 //ATR: Permite ocultar el Div.
-function ShowDiv() {
-    var div = document.getElementById("divOculto");
+function ShowGrid() {
+    var div = document.getElementById("gridApiRest");
 
     if(div !== undefined)
     {
         //$("#divOculto").show();
-        $("#divOculto").css("display", "");
+        $("#gridApiRest").css("display", "");
 
     }
 
 }
 
 //ATR: Permite mostrar el modal oculto, que desplegará el inicio de sesió.
-function ShowModalLogin()
-{
-    $('#modalLogin').modal({
-        show: 'show'
-    });
+//function ShowModalLogin()
+//{
+//    $('#modalLogin').modal({
+//        show: 'show'
+//    });
+//
+//}
 
-}
