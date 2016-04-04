@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--Aca agregamos el nombre del modulo en angularjs-->
+<html lang="en" ng-app="consumeApiApp">
+<head>
+    <meta charset="UTF-8">
+    <title>DAI5501-010V - Ejercicio 4 (Consumiendo API Rest)</title>
+
+    <!--StyleSheet that we need-->
+    <link rel="stylesheet" href="../../../../../libs/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/dataViewStyle.css">
+
+
+</head>
+
+<body>
+
+<form id="myForm" name="myForm" ng-submit="onSubmit()">
+<div class="container" ng-controller="consumeController">
+        <div class="row product">
+            <div class="col-md-5 col-md-offset-0"></div>
+            <div class="col-md-7">
+                <h2>Consumir API Amazon WS con AngularJs</h2>
+                <button class="btn btn-primary" ng-click="onSubmit()" type="submit">Get Data </button>
+            </div>
+        </div>
+        <div class="page-header">
+
+        <h3>Api: ec2-52-38-91-238.us-west-2.compute.amazonaws.com:81/products</h3>
+
+        <div class="table-responsive"  id="gridApiRest">
+            <!--<div class="table-responsive" style="display: none" id="gridApiRest">-->
+
+            <table class="table table-bordered">
+
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Color</th>
+                    <th>OS</th>
+                    <th>SENSORS</th>
+                    <th>CPU</th>
+                </tr>
+
+                <tr ng-repeat="prod in ProductsInfo">
+                    <td>{{ $index }}</td>
+                    <td>{{ prod.name }}</td>
+                    <td>{{ prod.colors }}</td>
+                    <td>{{ prod.os }}</td>
+                    <td>{{ prod.sensors }}</td>
+                    <td>{{ prod.cpu }}</td>
+                </tr>
+
+
+            </table>
+
+
+        </div>
+        <div class="page-header"></div>
+        <div class="media">
+            <div class="media-body"></div>
+        </div>
+    </div>
+
+
+</div><!-- /.container -->
+</form>
+
+</body>
+
+<!--ATR- Libraries that i need for this form. -->
+<script src="../../../../../libs/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../../../../libs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../../../../libs/bower_components/angular/angular.min.js"></script>
+
+<script src="../controller/dataViewController.js"></script>
+<script src="../controller/utils.js"></script>
+
+</body>
+</html>
