@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--Aca agregamos el nombre del modulo en angularjs-->
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>DAI5501-010V - Ejercicio 4 (Consumiendo API Rest) version jquery</title>
+
+    <!--StyleSheet that we need-->
+    <link rel="stylesheet" href="../../../../../libs/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/dataViewStyle.css">
+    <link rel="stylesheet" href="../../../../../libs/bower_components/datatables/media/css/jquery.dataTables.min.css">
+
+
 </head>
+
 <body>
+
+<form id="myForm" name="myForm">
+<div class="container" >
+        <div class="row product">
+            <div class="col-md-5 col-md-offset-0"></div>
+            <div class="col-md-7">
+                <h2>Consumir API Amazon WS con Jquery</h2>
+                <button class="btn btn-primary"  type="submit">Get Data </button>
+            </div>
+        </div>
+        <div class="page-header">
+
+        <h3>Api: ec2-52-38-91-238.us-west-2.compute.amazonaws.com:81/products</h3>
+
+        <div class="table-responsive"  id="gridApiRest">
+            <!--<div class="table-responsive" style="display: none" id="gridApiRest">-->
+
+            <table class="table table-bordered" id="gridTable" name ="gridTable"   >
+
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Color</th>
+                    <th>OS</th>
+                    <th>Office</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Color</th>
+                    <th>OS</th>
+                    <th>Office</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+                </tfoot>
+
+            </table>
+
+
+        </div>
+        <div class="page-header"></div>
+        <div class="media">
+            <div class="media-body"></div>
+        </div>
+    </div>
+
+
+</div><!-- /.container -->
+</form>
+
+</body>
+
+<!--ATR- Libraries that i need for this form. -->
+<script src="../../../../../libs/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../../../../libs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../../../../libs/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+
+<script src="../controller/dataViewController.js"></script>
+<script src="../controller/utils.js"></script>
 
 </body>
 </html>
