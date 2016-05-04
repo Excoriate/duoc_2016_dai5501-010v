@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--Se asocia, el modulo a la vista, -->
+<html lang="en" ng-app="LoginFormModule">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+
+    <!--Contenido estatico, hoja de estilo requeridas. -->
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../share/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--Generamos barra de navegación con Bootstrap. -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <!--Contenedor, con un brand-->
+    <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand"
+           href="/">
+            Primer Form Bootstrap + AngularJs.
+        </a>
+        </div>
+
+    </div>
+
+</nav>
+
+<!--Contenedor principal que englobará al form. -->
+<div class="container main-content">
+    <form name="theForm" >
+
+        <!--Input text nro 1 Nombre-->
+        <div class="form-group">
+            <label for="name">Tu Nombre</label>
+            <input type="text"
+                   class="form-control"
+                   id="name"
+                   >
+        </div>
+
+    </form>
+
+</div>
+
+
+<!--Archivos JS requeridos para el proyecto de AngularJs. -->
+<script src="../../bower_components/angular/angular.min.js"></script>
+<script src="../controller/FormValidationController.js"></script>
+
+</body>
+</html>
