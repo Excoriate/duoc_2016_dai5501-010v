@@ -29,19 +29,51 @@
 </nav>
 
 <!--Contenedor principal que englobará al form. -->
-<div class="container main-content">
-    <form name="theForm" >
+<div class="container main-content" ng-controller="LoginFormController">
+    <form name="theForm" ng-submit="onSubmit();">
 
         <!--Input text nro 1 Nombre-->
         <div class="form-group">
-            <label for="name">Tu Nombre</label>
-            <input type="text"
+        <label for="name">Tu Nombre</label>
+        <input type="text"
+               class="form-control"
+               id="name"
+               ng-model="formModel.name"
+        >
+    </div>
+
+        <div class="form-group">
+            <label for="name">Password</label>
+            <input type="password"
                    class="form-control"
-                   id="name"
-                   >
+                   id="password"
+                   ng-model="formModel.password"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="name">Email</label>
+            <input type="email"
+                   class="form-control"
+                   id="email"
+                   ng-model="formModel.email"
+            >
+        </div>
+
+        <!--Boton, que gatilla un submit. -->
+        <div class="form-group">
+            <button class="btn btn-primary"
+            type="submit"> Registrar
+
+            </button>
+
         </div>
 
     </form>
+
+    <pre> {{ formModel.name | json  }} </pre>
+    <pre> {{ formModel.password | json  }} </pre>
+    <pre> {{ formModel.email | json  }} </pre>
 
 </div>
 
