@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <title>TODO App, dai5501</title>
-    <h1>TODO APP, Home. </h1>
-</head>
-<body>
+<html ng-app="todoApp">
 
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" type="text/css" href="../../../webapp/lib/css/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../webapp/css/styles.css">
+
+    <script type="text/javascript" src="../../../webapp/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../webapp/lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../../../webapp/lib/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="../../../webapp/js/app.js"></script>
+    <script type="text/javascript" src="../../../webapp/js/factory.js"></script>
+    <script type="text/javascript" src="../../../webapp/js/controllers.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>Todo App</h1>
+    <hr/>
+    <ng-view></ng-view>
+</div>
+
+<!-- Live reload script -->
+<!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
 </body>
+
 </html>

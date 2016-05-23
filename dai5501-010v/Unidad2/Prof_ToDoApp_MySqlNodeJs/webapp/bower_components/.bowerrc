@@ -1,4 +1,4 @@
 {
-    "directory": "client/lib",
+    "directory": "webapp/lib",
     "interactive" : false
 }

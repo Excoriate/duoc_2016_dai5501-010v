@@ -1,4 +1,7 @@
+
 {
-  "name": "application-name",
-  "version": "0.0.1"
+  "name": "TodoApp",
+  "version": "0.1.0",
+  "description": "Alex Torres todo app",
+  "private": true
 }

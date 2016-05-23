@@ -1,5 +1,5 @@
 todoApp.factory('todosFactory', function($http) {
-  var urlBase = '/api/todos';
+  var urlBase = '/api/alltask';
   var _todoService = {};
 
   _todoService.getTodos = function() {
