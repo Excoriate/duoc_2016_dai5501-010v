@@ -1,0 +1,15 @@
+{
+  "name": "PROF_RestApi_Restify",
+  "version": "1.0.0",
+  "description": "primera api con restify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mongojs": "^2.4.0",
+    "restify": "^4.1.0"
+  }
+}
